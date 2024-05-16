@@ -1,10 +1,13 @@
+/* Estilos CSS podem ser adicionados aqui */
 
+/* Estilo base */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Layout com Flexbox */
 body {
     display: flex;
     flex-direction: column;
@@ -25,7 +28,6 @@ nav {
     text-align: center;
     display: flex;
     justify-content: center;
-    
 }
 
 nav a {
@@ -58,25 +60,3 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
-
-
-@media only screen and (min-width: 300px) {
-    
-    body {
-      background-color: rgb(6, 77, 52);
-      color: white;
-   
-    }
-}   
-
-
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: rgb(102, 99, 118);
-    color: black;
-  }
-
-
-}
-
