@@ -1,62 +1,57 @@
-/* Estilos CSS podem ser adicionados aqui */
-
-/* Estilo base */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Layout com Flexbox */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #179849, #bfd243);
     color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
     display: flex;
     justify-content: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.main-content {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.main-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+.container {
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e67e22;
+}
+
+.feedback {
+    margin-top: 20px;
+}
+
+.feedback p {
+    margin: 10px 0;
+}
+
+.feedback span {
+    font-weight: bold;
 }
