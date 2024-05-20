@@ -33,15 +33,15 @@ h1 {
 
 .button {
     padding: 10px 20px;
-    background-color: #f39c12;
-    color: #fff;
+    background-color: #fffb00;
+    color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #e67e22;
+    background-color: #ffa600;
 }
 
 .feedback {
