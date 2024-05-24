@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    position: relative;
 }
 
 .container {
@@ -54,4 +55,14 @@ h1 {
 
 .feedback span {
     font-weight: bold;
+}
+
+.last-guess {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

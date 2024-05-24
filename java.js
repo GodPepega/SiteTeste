@@ -47,6 +47,7 @@ const countriesData = {
 const countryKeys = Object.keys(countriesData);
 const randomIndex = Math.floor(Math.random() * countryKeys.length);
 const mysteryCountry = countriesData[countryKeys[randomIndex]];
+let lastGuess = "None";
 
 document.getElementById('countryForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -56,10 +57,10 @@ document.getElementById('countryForm').addEventListener('submit', function(event
 function checkGuess() {
     const userGuess = document.getElementById("countryInput").value.trim();
     let feedback = "";
-    
+
     if (countriesData[userGuess]) { 
         const guessedCountry = countriesData[userGuess];
-        
+
         feedback += `<p>Hemisphere: ${compareAttribute(guessedCountry.hemisphere, mysteryCountry.hemisphere)}</p>`;
         feedback += `<p>Continent: ${compareAttribute(guessedCountry.continent, mysteryCountry.continent)}</p>`;
         feedback += `<p>Temperature: ${compareAttribute(guessedCountry.temperature, mysteryCountry.temperature)}</p>`;
@@ -70,6 +71,8 @@ function checkGuess() {
     }
 
     document.getElementById("feedback").innerHTML = feedback;
+    document.getElementById("lastGuess").innerText = `Last Guess: ${lastGuess}`;
+    lastGuess = userGuess;
 }
 
 function compareAttribute(guess, actual) {
